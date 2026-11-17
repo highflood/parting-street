@@ -1,0 +1,22 @@
+{
+  "name": "parting-street",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test:sql": "node scripts/test-sql.mjs",
+    "regions": "node scripts/build-regions.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.0",
+    "pretendard": "^1.3.9"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.3.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.6"
+  }
+}
